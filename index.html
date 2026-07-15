@@ -1,66 +1,58 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>조국현 포트폴리오 | 계산기</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>3주차 과제2: 계산기</title>
+<link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-    <header class="navbar-wrapper">
-        <nav class="navbar">
-            <div class="nav-logo">KUKHYUN.DEV</div>
-            <div class="nav-links">
-                <a href="index.html" class="active">Calculator</a>
-                <a href="intro.html">Slide Intro</a>
-            </div>
-        </nav>
-    </header>
+  <div class="stage">
+    <div class="stage__title">3주차 과제2 · 계산기 화면</div>
 
-    <main class="container">
-        <h1 class="main-title">🧮 2주 차 과제: 웹 계산기 화면 구현</h1>
-        
-        <div class="main-hero text-center">
-            <div class="calculator">
-                <div class="calc-display">
-                    <div class="calc-formula">125 × 4</div>
-                    <div class="calc-current">500</div>
-                </div>
-                
-                <div class="calc-keypad">
-                    <button class="btn-calc btn-op">C</button>
-                    <button class="btn-calc btn-op">MR</button>
-                    <button class="btn-calc btn-op">%</button>
-                    <button class="btn-calc btn-action">÷</button>
-                    
-                    <button class="btn-calc btn-input">7</button>
-                    <button class="btn-calc btn-input">8</button>
-                    <button class="btn-calc btn-input">9</button>
-                    <button class="btn-calc btn-action">×</button>
-                    
-                    <button class="btn-calc btn-input">4</button>
-                    <button class="btn-calc btn-input">5</button>
-                    <button class="btn-calc btn-input">6</button>
-                    <button class="btn-calc btn-action">─</button>
-                    
-                    <button class="btn-calc btn-input">1</button>
-                    <button class="btn-calc btn-input">2</button>
-                    <button class="btn-calc btn-input">3</button>
-                    <button class="btn-calc btn-action">+</button>
-                    
-                    <button class="btn-calc btn-input btn-zero">0</button>
-                    <button class="btn-calc btn-input">.</button>
-                    <button class="btn-calc btn-equal">=</button>
-                </div>
-            </div>
+    <div class="calculator">
+      <div class="brand-row">
+        <span class="brand-row__label">calc.mento</span>
+        <span class="brand-row__dot"></span>
+      </div>
 
-            <div class="mt-40">
-                <p class="desc-text">※ 3주차 과제 명세(FR1~FR7)를 준수하여 구현된 계산기 레이아웃입니다.</p>
-            </div>
-        </div>
-    </main>
+      <div class="screen">
+        <div class="screen__memory">9801</div>
+        <div class="screen__main">10x10</div>
+      </div>
+
+      <div class="keys">
+        <button class="key key--func">CE</button>
+        <button class="key key--func">MR</button>
+        <button class="key key--op">%</button>
+        <button class="key key--op">/</button>
+
+        <button class="key">7</button>
+        <button class="key">8</button>
+        <button class="key">9</button>
+        <button class="key key--op">x</button>
+
+        <button class="key">4</button>
+        <button class="key">5</button>
+        <button class="key">6</button>
+        <button class="key key--op">-</button>
+
+        <button class="key">1</button>
+        <button class="key">2</button>
+        <button class="key">3</button>
+        <button class="key key--op key--plus">+</button>
+
+        <button class="key key--zero">0</button>
+        <button class="key">.</button>
+        <button class="key key--op">=</button>
+      </div>
+    </div>
+
+    <p class="caption">
+      화면 구성만 담당하는 정적(static) 마크업입니다. 버튼 클릭 시 별도의 이벤트나 계산 로직은 연결되어 있지 않습니다.
+    </p>
+  </div>
 
 </body>
 </html>
