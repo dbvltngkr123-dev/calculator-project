@@ -2,4 +2,4 @@
 
 이 프로젝트는 CSS Grid와 Flexbox를 활용한 웹 계산기입니다.
 
-[👉 계산기 직접 실행해보기](여기에_위에서_받은_배포주소_붙여넣기)
+[👉 계산기 직접 실행해보기](https://dbvltngkr123-dev.github.io/calculator-project/)
